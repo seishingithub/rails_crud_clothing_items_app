@@ -9,4 +9,9 @@ Rails.application.routes.draw do
 
   get '/clothing_items/:id', to: 'clothing_items#show'
 
+  get '/clothing_items/:id/edit', to: 'clothing_items#edit'
+
+  put '/clothing_items/:id', to: 'clothing_items#update'
+
+
 end

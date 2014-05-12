@@ -1,0 +1,18 @@
+<h2>Edit Clothing Item</h2>
+
+<form action="/clothing_items/<%= @clothing_item.id %>" method="post">
+  <input type="hidden" name="_method" value="put" />
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <p>
+    <input name="clothing_item[clothing_type]" id="clothing_type" value="<%= @clothing_item.clothing_type %>">
+  </p>
+  <p>
+    <input name="clothing_item[clothing_material]" id="clothing_material" value="<%= @clothing_item.clothing_material %>">
+  </p>
+  <p>
+    <input name="clothing_item[clothing_color]" value="<%= @clothing_item.clothing_color %>">
+  </p>
+  <p>
+  <input type="submit" value="Update Clothing">
+  </p>
+</form>
