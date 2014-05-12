@@ -14,5 +14,11 @@ feature "Managing clothing items" do
     expect(page).to have_content 'skirt'
     expect(page).to have_content 'cotton'
     expect(page).to have_content 'blue'
+
+    click_on 'skirt'
+
+    expect(page).to have_content 'skirt'
+    expect(page).to have_content 'cotton'
+    expect(page).to have_content 'blue'
   end
 end
