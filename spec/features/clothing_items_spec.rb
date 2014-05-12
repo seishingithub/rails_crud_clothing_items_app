@@ -35,5 +35,11 @@ feature "Managing clothing items" do
     expect(page).to have_content 'skort'
     expect(page).to have_content 'polyester'
     expect(page).to have_content 'green'
+
+    click_on 'Delete Item'
+    expect(page).to have_no_content 'skort'
+    expect(page).to have_no_content 'polyester'
+    expect(page).to have_no_content 'green'
+
   end
 end

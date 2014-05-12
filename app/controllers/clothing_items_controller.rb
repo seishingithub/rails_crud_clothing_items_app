@@ -32,4 +32,11 @@ class ClothingItemsController < ApplicationController
     @clothing_item.save
     redirect_to "/clothing_items/#{@clothing_item.id}"
   end
+
+  def destroy
+    @clothing_item = ClothingItem.find(params[:id])
+    @clothing_item.destroy
+    redirect_to '/'
+  end
+
 end

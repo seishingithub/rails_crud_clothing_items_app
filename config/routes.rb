@@ -13,5 +13,6 @@ Rails.application.routes.draw do
 
   put '/clothing_items/:id', to: 'clothing_items#update'
 
+  delete '/clothing_items/:id', to: 'clothing_items#destroy'
 
 end
