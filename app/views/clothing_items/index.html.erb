@@ -1,0 +1,34 @@
+<h2>Clothing Items </h2>
+
+<a href="clothing_items/new">Add New Clothing Item</a>
+
+<table>
+  <thead>
+  <tr>
+    <th>Clothing Type</th>
+    <th>Clothing Material</th>
+    <th>Clothing Color</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @clothing_items.each do |clothing_item| %>
+    <tr>
+      <td>
+        <a href="/clothing_items/<%= clothing_item.id %>">
+          <%= clothing_item.clothing_type %>
+        </a>
+      </td>
+      <td>
+        <a href="/clothing_items/<%= clothing_item.id %>">
+          <%= clothing_item.clothing_material %>
+        </a>
+      </td>
+      <td>
+        <a href="/clothing_items/<%= clothing_item.id %>">
+          <%= clothing_item.clothing_color %>
+        </a>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

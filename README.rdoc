@@ -6,7 +6,7 @@ Generate the app:
  Delete lots of comments and unnecessary directories.
 
  Get spec up and running by adding the following to the Gemfile
-    group :test do
+    group :test, :development do
       gem 'rspec-rails', '~> 2.14.2'
       gem 'capybara', '~> 2.2.1'
     end

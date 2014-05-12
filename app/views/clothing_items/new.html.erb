@@ -1,0 +1,21 @@
+<h2>Adding New Clothing Item</h2>
+
+<form action="/clothing_items" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+
+  <p>
+    <input name="clothing_item[clothing_type]" id="Clothing Type" placeholder="Clothing Type">
+  </p>
+
+  <p>
+    <input name="clothing_item[clothing_material]" id="Clothing Material" placeholder="Clothing Material">
+  </p>
+
+  <p>
+    <input name="clothing_item[clothing_color]" id="Clothing Color" placeholder = "Clothing Color">
+  </p>
+
+  <p>
+    <input type="submit" value="Create Clothing Item">
+  </p>
+</form>
